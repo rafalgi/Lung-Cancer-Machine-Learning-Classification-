@@ -1,41 +1,57 @@
-Cel projektu
-Celem projektu jest zbadanie możliwego związku między poziomem zaawansowania raka u pacjentów a poziomem zanieczyszczenia powietrza, na podstawie danych medycznych i środowiskowych. Analiza obejmuje wykorzystanie różnych technik uczenia maszynowego do przewidywania poziomu zaawansowania raka.
+# Air Pollution and Cancer Stage Prediction
 
-Kroki projektu
-Importowanie bibliotek
-Na początku projektu importowane są niezbędne biblioteki Python, takie jak Pandas, NumPy, Matplotlib, Seaborn oraz kilka z bibliotek Scikit-learn do przetwarzania danych, wizualizacji i budowy modeli uczenia maszynowego.
+## Project Overview
 
-Wczytywanie i wstępna analiza danych
-Dane są wczytywane z pliku CSV. Przeprowadzana jest wstępna analiza, która obejmuje wyświetlanie pierwszych kilku wierszy danych, generowanie statystyk opisowych oraz sprawdzanie informacji o kolumnach i typach danych.
+The goal of this project is to investigate the potential relationship between air pollution levels and the progression of cancer in patients, using both medical and environmental data. The analysis leverages machine learning techniques to predict the stage of cancer based on the data.
 
-Czyszczenie danych
-Dane są czyszczone poprzez usuwanie duplikatów i sprawdzanie brakujących wartości. Dzięki temu można uniknąć błędów w dalszej analizie.
+## Project Steps
 
-Kodowanie zmiennej docelowej
-Zmienna docelowa, czyli poziom zaawansowania raka (Level), jest kodowana na wartości numeryczne, aby można było ją użyć w modelach uczenia maszynowego. Usuwane są również niepotrzebne kolumny, takie jak index i Patient Id.
+### 1. Importing Libraries
+At the start of the project, essential Python libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn are imported for data processing, visualization, and building machine learning models.
 
-Wizualizacja danych
-Dane są wizualizowane w celu lepszego zrozumienia rozkładu zmiennych oraz korelacji między nimi. Używane są wykresy kołowe do przedstawienia rozkładu poziomów raka oraz mapy cieplne do pokazania korelacji między zmiennymi.
+### 2. Loading and Preliminary Data Analysis
+Data is loaded from a CSV file. Preliminary analysis includes displaying the first few rows of the dataset, generating descriptive statistics, and reviewing information about columns and data types.
 
-Budowa modeli uczenia maszynowego
-W projekcie używane są różne modele uczenia maszynowego, takie jak:
+### 3. Data Cleaning
+The data is cleaned by removing duplicates and checking for missing values to avoid errors in further analysis.
 
-K-Nearest Neighbors (KNN)
-Random Forest
-Naive Bayes
-Decision Tree
-Modele te są trenowane i testowane na danych, a ich wyniki są porównywane w celu wybrania najlepszego modelu do przewidywania poziomu zaawansowania raka.
+### 4. Target Variable Encoding
+The target variable, i.e., the cancer stage (`Level`), is encoded into numerical values so it can be used in machine learning models. Unnecessary columns such as `Index` and `Patient ID` are also removed.
 
-Ewaluacja modeli
-Modele są oceniane za pomocą różnych metryk, takich jak macierz pomyłek, raport klasyfikacji i dokładność. Metryki te pomagają ocenić skuteczność każdego modelu i wybrać ten, który daje najlepsze wyniki.
+### 5. Data Visualization
+The data is visualized to better understand the distribution of variables and the correlation between them. Techniques such as pie charts are used to show the distribution of cancer stages, and heatmaps are used to display correlations between variables.
 
-Wnioski
-Na podstawie wyników analizy można wyciągnąć wnioski dotyczące potencjalnego związku między zanieczyszczeniem powietrza a poziomem zaawansowania raka. Wyniki mogą również wskazać, które modele uczenia maszynowego są najbardziej efektywne w przewidywaniu poziomu zaawansowania raka.
+### 6. Building Machine Learning Models
+Various machine learning models are built in the project, including:
 
-Potencjalne zastosowania
-Wyniki tego projektu mogą być wykorzystane do:
+- K-Nearest Neighbors (KNN)
+- Random Forest
+- Naive Bayes
+- Decision Tree
 
-Zwiększenia świadomości na temat wpływu zanieczyszczenia powietrza na zdrowie.
-Wspierania decydentów w tworzeniu polityk mających na celu redukcję zanieczyszczenia powietrza.
-Wsparcia pracowników służby zdrowia w identyfikacji pacjentów o podwyższonym ryzyku zachorowania na zaawansowane stadia raka.
-Projekt ten stanowi cenny wkład w badania nad wpływem środowiska na zdrowie i może przyczynić się do poprawy jakości życia pacjentów oraz ochrony środowiska.
+These models are trained and tested on the dataset, and their performance is compared to select the best model for predicting the cancer stage.
+
+### 7. Model Evaluation
+Models are evaluated using various metrics, such as confusion matrices, classification reports, and accuracy scores. These metrics help assess the effectiveness of each model and choose the one that yields the best results.
+
+### 8. Conclusions
+Based on the results of the analysis, conclusions are drawn about the potential link between air pollution and cancer progression. Additionally, the performance of different machine learning models in predicting cancer stages is evaluated.
+
+## Potential Applications
+
+The results of this project could be used for:
+
+- Raising awareness about the impact of air pollution on health.
+- Supporting policymakers in designing policies aimed at reducing air pollution.
+- Assisting healthcare professionals in identifying patients at higher risk of advanced cancer stages.
+
+This project contributes to research on environmental impacts on health and can help improve patients' quality of life while promoting environmental protection.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
