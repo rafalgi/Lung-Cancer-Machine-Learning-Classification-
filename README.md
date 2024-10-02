@@ -1,5 +1,7 @@
 # Air Pollution and Cancer Stage Prediction
 
+![image](https://domf5oio6qrcr.cloudfront.net/medialibrary/10245/GettyImages-1098018152.jpg)
+
 ## Project Overview
 
 The goal of this project is to investigate the potential relationship between air pollution levels and the progression of cancer in patients, using both medical and environmental data. The analysis leverages machine learning techniques to predict the stage of cancer based on the data.
